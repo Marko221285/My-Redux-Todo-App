@@ -1,15 +1,15 @@
 import React from 'react';
 import AddTodo from './AddTodo';
-import TodoList from './TodoList';
+import VisibleTodoList from '../containers/VisibleTodoList';
+import Footer from './Footer';
 
-const App = () => {
-  return (
+const App = () => (
     <div>
       <h2>Simple Redux Todo App</h2>
       <AddTodo />
-      <TodoList />
-    </div>
-  );
-}
+      <VisibleTodoList />
+      <Footer />
+    </div>  
+)
 
 export default App;
